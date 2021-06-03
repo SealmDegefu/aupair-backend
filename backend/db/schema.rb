@@ -28,10 +28,8 @@ ActiveRecord::Schema.define(version: 2021_06_02_214416) do
   end
 
   create_table "favorites", force: :cascade do |t|
-    t.string "name"
-    t.integer "age"
-    t.integer "years_of_experience"
-    t.string "nationality"
+    t.integer "aupair_id"
+    t.integer "family_id"
   end
 
   create_table "listings", force: :cascade do |t|
